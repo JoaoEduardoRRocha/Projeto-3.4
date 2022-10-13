@@ -11,7 +11,7 @@
 
 body {
     --bg-background1: hsl(0, 2%, 11%);
-    --bg-background2: hsl(0, 3%, 73%);
+    --bg-background2: hsl(0, 0%, 100%);
 }
 
 /* ícone da página */
@@ -43,33 +43,34 @@ header {
 .card {
     background-color: var(--bg-background2);
     display: grid;
-    /*grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;*/
-    grid-template-areas: 'A B C' 'D E F';
+    grid-template-columns: 230px 230px 230px;
+    grid-template-rows: 238px 238px 238px;
+    gap: 3px;
 
-}
-.cardA {
-    grid-area: A;
-}
-.cardB {
-    grid-area: B;
-}
-.cardC {
-    grid-area: C;
-}
-.cardD {
-    grid-area: D;
-}
-.cardE {
-    grid-area: E;
-}
-.cardF {
-    grid-area: F;
+    
 }
 
 .card img {
+    
+    width: 100%;
     object-fit: cover;
 }
+
+.big {
+    grid-row: span 2;
+}
+
+.cardDif{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 
 /* escrita da página */
 h1 {
@@ -90,13 +91,8 @@ p {
     text-align: center;
 }
  
-footer {
+footer a {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     color: hsl(0, 2%, 11%);
-
-    position: absolute;
-    bottom: -10%;
-    right: 40%;
-    
 }
