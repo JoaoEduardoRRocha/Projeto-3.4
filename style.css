@@ -1,0 +1,102 @@
+/* seletores universais da página */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    --bg-background1: hsl(0, 2%, 11%);
+    --bg-background2: hsl(0, 3%, 73%);
+}
+
+/* ícone da página */
+.landscape {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.2rem;
+}
+
+header img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100px;
+}
+
+
+/* corpo da página */
+main {
+    display: flex;
+}
+
+header {
+    background-color: var(--bg-background1);
+    max-width: 38rem;
+    height: 72rem;
+}
+
+/* img da página */
+.card {
+    background-color: var(--bg-background2);
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;*/
+    grid-template-areas: 'A B C' 'D E F';
+
+}
+.cardA {
+    grid-area: A;
+}
+.cardB {
+    grid-area: B;
+}
+.cardC {
+    grid-area: C;
+}
+.cardD {
+    grid-area: D;
+}
+.cardE {
+    grid-area: E;
+}
+.cardF {
+    grid-area: F;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+/* escrita da página */
+h1 {
+    font-family: "Arvo", sans-serif;
+    font-size: 2.5rem;
+    color: white;
+
+    margin: 3.2rem;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+
+    margin: 4.8rem ;
+    text-align: center;
+}
+ 
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: hsl(0, 2%, 11%);
+
+    position: absolute;
+    bottom: -10%;
+    right: 40%;
+    
+}
